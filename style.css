@@ -1,0 +1,203 @@
+/*
+Theme Name: mytheme
+Theme URI: http://carolinavallejo.x10.mx/
+Description: responsive theme
+<a href="http://carolinavallejo.x10.mx">Carolina Vallejo</a>
+Version: 1.0.0
+Author: Carolina Vallejo
+Author URI: http://carolinavallejo.x10.mx/
+Tags: 
+License: Released under the MIT license
+License URI: http://opensource.org/licenses/MIT
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# General
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# general
+--------------------------------------------------------------*/
+
+body{
+  font-family: open_sansregular, sans-serif;
+  line-height: 1;
+  background-color: white;
+  font-size: 62.5%;/*10px*/
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+  -o-font-smoothing: antialiased!important; 
+  color: black; 
+  font-weight: normal!important;
+
+}
+h1, h2, h3{
+    font-weight: normal;
+    font-size: 1em;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus  {
+  outline: 0;
+}
+
+/*----reset forms-*/
+input, 
+textarea,
+button{
+  display: block;
+  padding: 0;
+  margin:0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  box-shadow: 0;
+  border-radius: none;
+  border-radius: 0;
+  border: none;
+  resize: none;
+  background: none;
+  text-shadow: none;
+  width: 100%;
+  /*--transs--*/
+  transition: all 0.2s;
+}
+input[type="submit"],
+button{
+	background: #D1D1D1;
+}
+
+input:hover,
+input:enabled,
+textarea:hover,
+textarea:enabled,
+button:hover,
+button:enabled{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    box-shadow: 0;
+    border-radius: none;
+    border-radius: 0;
+    color: #404040;
+}
+
+input:focus,
+textarea:focus,
+button:focus{
+ outline: none; 
+}
+::-webkit-input-placeholder{
+  color: #D1D1D1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #D1D1D1;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #D1D1D1;
+}
+:-ms-input-placeholder {  
+  color: #D1D1D1;
+}
+
+input.search-submit {
+    /* background-color: #5D19CA; */
+    padding: 17px;
+    background: url(images/searchicon.png) no-repeat center #565656;
+    width: 26px;
+    height: 26px;
+    text-indent: 99999px;
+    margin-left: 5px;
+}
+
+/*---loader--*/
+.runloader{
+    background-color: #CECECE;
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 6px 10px 84px 14px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+}
+.loader {
+  font-size: 10px;
+  position: absolute;
+  text-indent: -9999em;
+  border-top: 0.7em solid rgba(255, 255, 255, 0.2);
+  border-right: 0.7em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.7em solid rgba(255, 255, 255, 0.2);
+  border-left: 0.7em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: spin 1.1s infinite linear;
+  animation: spin 1.1s infinite linear;
+  top: calc(50% - 2.5em);
+  left: calc(50% - 2.5em);
+
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
